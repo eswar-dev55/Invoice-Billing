@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>InvoicePro</title>
+
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body class="bg-gray-100">
+
+<!-- Navbar -->
+
+<nav class="bg-blue-700 text-white p-5 flex justify-between">
+
+<h1 class="text-2xl font-bold">InvoicePro</h1>
+
+<ul class="flex gap-6">
+<li><a href="#dashboard">Dashboard</a></li>
+<li><a href="#invoices">Invoices</a></li>
+<li><a href="#create">Create Invoice</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+
+</nav>
+
+<!-- Dashboard -->
+
+<section id="dashboard" class="p-10 text-center">
+
+<h2 class="text-3xl font-bold mb-5">
+Billing Dashboard
+</h2>
+
+<p>Manage your invoices and payments easily.</p>
+
+</section>
+
+<!-- Invoice Table -->
+
+<section id="invoices" class="p-10">
+
+<h2 class="text-3xl font-bold text-center mb-10">
+Invoice Records
+</h2>
+
+<div class="overflow-x-auto">
+
+<table class="table-auto w-full bg-white shadow rounded">
+
+<thead class="bg-gray-200">
+<tr>
+<th class="p-3">Invoice ID</th>
+<th class="p-3">Client</th>
+<th class="p-3">Amount</th>
+<th class="p-3">Status</th>
+</tr>
+</thead>
+
+<tbody>
+
+<tr class="text-center">
+<td class="p-3">INV001</td>
+<td class="p-3">John</td>
+<td class="p-3">$200</td>
+<td class="p-3 text-green-600">Paid</td>
+</tr>
+
+<tr class="text-center">
+<td class="p-3">INV002</td>
+<td class="p-3">Emma</td>
+<td class="p-3">$150</td>
+<td class="p-3 text-yellow-600">Pending</td>
+</tr>
+
+<tr class="text-center">
+<td class="p-3">INV003</td>
+<td class="p-3">David</td>
+<td class="p-3">$300</td>
+<td class="p-3 text-green-600">Paid</td>
+</tr>
+
+</tbody>
+
+</table>
+
+</div>
+
+</section>
+
+<!-- Create Invoice -->
+
+<section id="create" class="p-10 text-center">
+
+<h2 class="text-3xl font-bold mb-10">
+Create Invoice
+</h2>
+
+<form class="max-w-md mx-auto bg-white p-5 shadow rounded">
+
+<input type="text" placeholder="Client Name"
+class="w-full border p-2 mb-3">
+
+<input type="number" placeholder="Amount"
+class="w-full border p-2 mb-3">
+
+<select class="w-full border p-2 mb-3">
+<option>Paid</option>
+<option>Pending</option>
+</select>
+
+<button class="bg-blue-600 text-white px-6 py-2 rounded">
+Create Invoice
+</button>
+
+</form>
+
+</section>
+
+<!-- Contact -->
+
+<section id="contact" class="p-10 text-center">
+
+<h2 class="text-3xl font-bold mb-5">
+Contact Us
+</h2>
+
+<p>Email: invoicepro@gmail.com</p>
+
+<p>Phone: +91 7842269611</p>
+
+</section>
+
+<!-- Footer -->
+
+<footer class="bg-blue-700 text-white text-center p-5">
+
+<p>© 2026 InvoicePro</p>
+
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
